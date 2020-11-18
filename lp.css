@@ -1,0 +1,464 @@
+/* リセットCSS */
+body{
+  font-size: 14px;
+  color: #494949;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p{
+  padding: 10px 0;
+  margin: 0;
+}
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+/* リセットCSS */
+
+*{
+  box-sizing: border-box;
+}
+
+/* ---------------------------------- catch ---------------------------------- */
+.catch{
+  width: 100vw;
+  background-color: #0168B4;
+}
+.catch_line{
+  width: 100vw;
+  height: 5px;
+  background-color: #0168B4;
+}
+.title{
+  background-color: white;
+  color: #0168B4;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.balloon_con{
+  display: flex;
+  justify-content: center;
+}
+.balloon{
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  padding: 7px 10px;
+  font-size: 16px;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: #0168B4;
+}
+.balloon:before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid white;
+}
+.balloon p{
+  margin: 0 10px;
+  padding: 0;
+  font-weight: bold;
+}
+.catch_copy{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  line-height: 30px;
+}
+.catch_1, .catch_3{
+  font-size: 30px;
+}
+.catch_2{
+  font-size: 40px;
+}
+.catch_appeal{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 20px 0 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.catch_appeal p{
+  padding: 0;
+}
+.catch_appeal_2{
+  width: 1px;
+  height: 100px;
+  background-color: white;
+}
+.catch_appeal_1_2, .catch_appeal_3_2{
+  text-align: center;
+}
+.catch_appeal span{
+  font-size: 35px;
+}
+
+/* ---------------------------------- campaign ---------------------------------- */
+.campaign{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.campaign_frame{
+  width: 90%;
+  border: 4px solid #0168B4;
+  border-radius: 15px;
+  padding: 50px 30px 40px 30px;
+  position: relative;
+}
+.campaign_frame img{
+  width: 100%;
+  width: 90%;
+  position: absolute;
+  top: -40px;
+  left: 5%;
+}
+.campaign_1, .campaign_3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.campaign_title_1, .campaign_title_3{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.circle{
+  color: white;
+  font-size: 20px;
+  background-color: #0168B4;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.campaign_title_1_1, .campaign_title_3_1{
+  font-size: 20px;
+}
+.campaign_fee_1, .campaign_fee_3{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.campaign_fee_1 span, .campaign_fee_3 span{
+  font-size: 50px;
+  color: #0168B4;
+}
+.campaign_text_1, .campaign_text_3{
+  font-size: 15px;
+}
+.campaign_2{
+  height: 1px;
+  width: 90%;
+  background-color: #494949;
+  margin: 30px auto;
+}
+
+/* ---------------------------------- action ---------------------------------- */
+.action_messege{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+}
+.action_messege_1{
+  height: 3px;
+  width: 40px;
+  background-color: #0168B4;
+  transform: rotate(70deg);
+}
+.action_messege_2{
+  font-size: 20px;
+  color: #0168B4;
+  line-height: 15px;
+  text-align: center;
+}
+.action_messege_3{
+  height: 3px;
+  width: 40px;
+  background-color: #0168B4;
+  transform: rotate(-70deg);
+}
+.action_btn a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #0168B4;
+  height: 70px;
+  width: 90%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+/* ---------------------------------- before ---------------------------------- */
+.before img{
+  width: 100vw;
+  margin-top: 40px;
+  vertical-align: bottom; /* 画像の下の隙間削除 */
+}
+
+/* ---------------------------------- production ---------------------------------- */
+.production{
+  height: 115px;
+  width: 100vw;
+  background: url(images/個人・小規模のための.png) no-repeat center;
+  font-weight: bold;
+}
+.production_mask{
+  height: 100%;
+  background: rgb(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.production p{
+  font-size: 20px;
+  opacity: 1;
+}
+.production span{
+  font-size: 25px;
+  color: #0168B4;
+  opacity: 1;
+}
+
+/* ---------------------------------- appeal ---------------------------------- */
+.appeal{
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.appeal img{
+  width: 90vw;
+}
+.appeal_title{
+  font-size: 20px;
+  line-height: 20px;
+  margin: 25px 0 5px 0;
+  font-weight: bold;
+}
+.appeal_title span{
+  font-size: 27px;
+  color: #0168B4;
+}
+.appeal_text{
+  font-size: 15px;
+}
+.appeal_text_1, .appeal_text_2{
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------- after ---------------------------------- */
+.after img{
+  width: 100vw;
+  vertical-align: bottom; /* 画像の下の隙間削除 */
+}
+
+/* ---------------------------------- choice ---------------------------------- */
+.choice{
+  height: 115px;
+  width: 100vw;
+  background: url(images/理由.png) no-repeat center;
+  font-weight: bold;
+}
+.choice_mask{
+  height: 100%;
+  background: rgb(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.choice p{
+  font-size: 20px;
+  opacity: 1;
+}
+.choice span{
+  font-size: 25px;
+  color: #0168B4;
+  opacity: 1;
+}
+
+/* ---------------------------------- reason ---------------------------------- */
+.reason{
+  display: flex;
+  justify-content: center;
+}
+.reason_frame{
+  width: 90vw;
+  border: 3px solid #E3E3E3;
+  margin: 20px 0;
+}
+.reason_1{
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.reason_title{
+  display: flex;
+  align-items: center;
+}
+.reason_point{
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  background-color: #0168B4;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reason_point span{
+  font-size: 25px;
+}
+.reason_title_text{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 40px 0 15px;
+}
+.reason_text{
+  font-size: 15px;
+  margin: 20px 0 10px 0;
+}
+.reason_icon{
+  height: 110px;
+  width: 110px;
+  background-color: white;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reason_icons{
+  font-size: 65px;
+  color: #0168B4;
+}
+.reason_2{
+  background-color: white;
+}
+.reason_icon_2{
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.mini{
+  font-size: 30px;
+}
+
+/* ---------------------------------- fee ---------------------------------- */
+.fee{
+  width: 100vw;
+  background-color: #0168B4;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fee_title, .fee_50000{
+  font-size: 30px;
+  font-weight: bold;
+}
+.fee_price{
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/* ---------------------------------- flow ---------------------------------- */
+.flow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow_title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.flow_con{
+  background-color: #F7F7F7;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  margin-top: 50px;
+}
+.flow_con_first{
+  margin-top: 30px;
+}
+.step{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #0168B4;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+}
+.flow_icon{
+  height: 110px;
+  width: 110px;
+  background-color: white;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 15px 0;
+}
+.flow_icons{
+  font-size: 65px;
+  color: #0168B4;
+}
+.flow_con_title{
+  font-size: 25px;
+  font-weight: bold;
+}
+.flow_con_text{
+  font-size: 15px;
+}
+
+/* ---------------------------------- action ---------------------------------- */
+.last_action{
+  margin-bottom: 50px;
+}
