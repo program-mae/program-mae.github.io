@@ -256,7 +256,6 @@ body{
     position: relative;
     width: 275px;
     margin: 25px auto 10px auto;
-    transition: .2s;
   }
   .action_btn_1:before, .action_btn_1:after {
     content: "";
@@ -936,4 +935,3 @@ body{
   }
   /* ---------------------------------- action ---------------------------------- */
 }
-  
