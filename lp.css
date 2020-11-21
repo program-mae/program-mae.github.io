@@ -7,7 +7,6 @@ body{
 h1, h2, h3, h4, h5, h6, p{
   padding: 10px 0;
   margin: 0;
-  ’
 }
 ul, li{
   padding: 0;
@@ -26,6 +25,25 @@ body{
     "Hiragino Sans",
     Meiryo,
     sans-serif;
+}
+
+/* javascript */
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+.sa--up {
+  transform: translate(0, 100px);
+}
+.sa--down {
+  transform: translate(0, -100px);
+}
+.sa--scaleUp {
+  transform: scale(.5);
 }
 
 /* ---------------------------------- catch ---------------------------------- */
@@ -184,26 +202,26 @@ body{
 }
 
 /* ---------------------------------- action ---------------------------------- */
-.action_messege{
+.action_message{
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   margin: 50px 0 20px 0;
 }
-.action_messege_1{
+.action_message_1{
   height: 3px;
   width: 40px;
   background-color: #0168B4;
   transform: rotate(70deg);
 }
-.action_messege_2{
+.action_message_2{
   font-size: 20px;
   color: #0168B4;
   line-height: 15px;
   text-align: center;
 }
-.action_messege_3{
+.action_message_3{
   height: 3px;
   width: 40px;
   background-color: #0168B4;
@@ -318,12 +336,10 @@ body{
 }
 .choice p{
   font-size: 20px;
-  opacity: 1;
 }
 .choice span{
   font-size: 25px;
   color: #0168B4;
-  opacity: 1;
 }
 
 /* ---------------------------------- reason ---------------------------------- */
@@ -598,11 +614,11 @@ body{
     padding-left: 30px;
   }
   /* ---------------------------------- action ---------------------------------- */
-  .action_messege_2 {
+  .action_message_2 {
     font-size: 30px;
     line-height: 35px;
   }
-  .action_messege_1, .action_messege_3{
+  .action_message_1, .action_message_3{
     width: 65px;
   }
   .action_btn a {
@@ -655,7 +671,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 2vw;
+    padding: 50px 2vw 0 2vw;
   }
   .appeal_title, .appeal_text_1, .appeal_text_2{
     margin: 0;
