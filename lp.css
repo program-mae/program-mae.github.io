@@ -212,7 +212,7 @@ body{
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 0 0;
 }
 .action_message_1{
   height: 3px;
@@ -247,6 +247,60 @@ body{
   margin: 0 auto;
   font-weight: bold;
 }
+/* ボタン */
+@keyframes anime{
+  0%{transform:scale(.95); opacity:1}
+  90%{opacity:.1}to{transform:scale(1.2,1.5); opacity:0}
+  }
+  .action_btn_1 {
+    position: relative;
+    width: 275px;
+    margin: 25px auto 10px auto;
+    transition: .2s;
+  }
+  .action_btn_1:before, .action_btn_1:after {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 32px;
+    background: #3a81b4;
+    border: 1px solid #3a81b4;
+    transform: translate3d(0,0,0);
+  }
+  .action_btn_1:before {
+    animation: anime 2s ease-out infinite;
+  }
+  .action_btn_1:after {
+   animation: anime 2s ease-out 1s infinite;
+  }
+  a {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 20px 0;
+    border-radius: 32px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #0168B4;
+  }
+  .action_btn_2 {
+    display: block;
+    position: relative;
+  }
+  .action_btn_2:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 8px;
+    height: 8px;  
+    margin: -4px 0 0 0;
+  }
 
 /* ---------------------------------- before ---------------------------------- */
 .before img{
@@ -650,6 +704,20 @@ body{
     width: 500px;
     margin: 30px auto 100px auto;
   }
+  /* ボタン */
+  @keyframes anime{
+    0%{transform:scale(.95); opacity:1}
+    90%{opacity:.1}to{transform:scale(1.2,1.5); opacity:0}
+    }
+  .action_btn_1 {
+    width: 400px;
+    margin: 25px auto 80px auto;
+  }
+  a {
+    font-size: 25px;
+    padding: 25px 0;
+    border-radius: 34px;
+  }
   /* ---------------------------------- before ---------------------------------- */
   .before{
     display: flex;
@@ -868,3 +936,4 @@ body{
   }
   /* ---------------------------------- action ---------------------------------- */
 }
+  
