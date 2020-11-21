@@ -105,6 +105,11 @@ body{
 }
 .catch_2{
   font-size: 40px;
+  background-color: white;
+  color: #0168B4;
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 5px;
 }
 .catch_appeal{
   color: white;
@@ -543,6 +548,9 @@ body{
   }
   .catch_2 {
     font-size: 80px;
+    line-height: 80px;
+    border-radius: 20px;
+    padding: 10px;
   }
   .catch_appeal_3_1 {
     margin: 0 30px;
