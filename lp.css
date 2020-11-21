@@ -281,40 +281,55 @@ body{
 
 /* ---------------------------------- appeal ---------------------------------- */
 .appeal{
-  background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+}
+.appeal_con{
+  background-color: #F7F7F7;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   padding: 20px;
+  margin-top: 50px;
 }
-.appeal_image{
-  display: flex;
-  justify-content: center;
-}
-.appeal img{
-  width: 90vw;
-  max-width: 400px;
-}
-.appeal_con_text{
-  max-width: 510px;
-}
-.appeal_title{
+.appeal_step{
   font-size: 20px;
-  line-height: 35px;
-  margin: 25px 0 5px 0;
   font-weight: bold;
+  color: white;
+  background-color: #0168B4;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
 }
-.appeal_title span{
-  font-size: 27px;
+.appeal_img{
+  width: 90%;
+  margin: 5%;
+  max-width: 350px;
+}
+.appeal_con_title{
+  font-size: 23px;
+  font-weight: bold;
+}
+.appeal_con_title span{
+  font-size: 30px;
   color: #0168B4;
 }
-.appeal_text{
+.appeal_con_text{
   font-size: 15px;
 }
-.appeal_text_1, .appeal_text_2{
-  margin-bottom: 30px;
+.appeal_con_right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ---------------------------------- after ---------------------------------- */
@@ -521,9 +536,9 @@ body{
   margin-bottom: 50px;
 }
 
-/* ---------------------------------- 390px ---------------------------------- */
-@media (min-width: 390px) {
-  .none_390{
+/* ---------------------------------- 490px ---------------------------------- */
+@media (min-width: 490px) {
+  .none_490{
     display: none;
   }
 }
@@ -661,42 +676,8 @@ body{
     line-height: 30px;
   }
   /* ---------------------------------- appeal ---------------------------------- */
-  .appeal_con{
-    display: flex;
-    margin-bottom: 50px;
-    align-items: center;
-  }
-  .appeal_con_text{
-    width: 60vw;
-    max-width: 687px;
-  }
-  .appeal img {
-    width: 30vw;
-    max-width: 350px;
-    margin-right: 40px;
-  }
-  .appeal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 2vw 0 2vw;
-  }
-  .appeal_title, .appeal_text_1, .appeal_text_2{
-    margin: 0;
-  }
-  .appeal_text {
-    font-size: 18px;
-  }
-  .appeal_title {
-    font-size: 25px;
-    line-height: 40px;
-    justify-content: flex-start;
-  }
-  .appeal_title span {
-    font-size: 35px;
-  }
-  .appeal_adjustment {
-    padding: 0;
+  .appeal_con {
+    max-width: 760px;
   }
   /* ---------------------------------- after ---------------------------------- */
   .after{
@@ -782,6 +763,8 @@ body{
 }
 /* ---------------------------------- 1110px ---------------------------------- */
 @media (min-width: 1110px) {
+  /* ---------------------------------- catch ---------------------------------- */
+/* ---------------------------------- campaign ---------------------------------- */
   .campaign_title_1, .campaign_title_3 {
     flex-direction: unset;
     font-size: 30px;
@@ -793,14 +776,42 @@ body{
   .campaign_text_1, .campaign_text_3 {
     font-size: 20px;
   }
-  .appeal_text {
+  /* ---------------------------------- action ---------------------------------- */
+  /* ---------------------------------- before ---------------------------------- */
+  /* ---------------------------------- production ---------------------------------- */
+  /* ---------------------------------- appeal ---------------------------------- */
+  .appeal_con_text {
     font-size: 20px;
   }
-  .reason_icon {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
+  .appeal_con_title {
+    font-size: 25px;
   }
+  .appeal_con_title span {
+    font-size: 35px;
+  }
+  .appeal_step {
+    font-size: 25px;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    top: -25px;
+  }
+  .appeal_con {
+    flex-direction: unset;
+    justify-content: space-around;
+    max-width: 1195px;
+  }
+  .appeal_con_right{
+    width: 70%;
+    align-items: flex-start;
+  }
+  .appeal_img {
+    width: 250px;
+    margin: 0;
+  }
+  /* ---------------------------------- after ---------------------------------- */
+  /* ---------------------------------- choice ---------------------------------- */
+  /* ---------------------------------- reason ---------------------------------- */
   .reason_icons {
     font-size: 90px;
   }
@@ -810,6 +821,7 @@ body{
   .reason_text {
     font-size: 20px;
   }
+  /* ---------------------------------- fee ---------------------------------- */
   .fee_text{
     font-size: 20px;
   }
@@ -854,4 +866,5 @@ body{
     border-radius: 25px;
     top: -25px;
   }
+  /* ---------------------------------- action ---------------------------------- */
 }
