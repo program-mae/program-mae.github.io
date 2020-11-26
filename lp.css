@@ -319,8 +319,10 @@ body{
 .production{
   height: 115px;
   width: 100vw;
-  background: url(images/個人・小規模のための.png) no-repeat center;
+  background: url(images/個人・小規模のための.jpg) no-repeat center;
   font-weight: bold;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .production_mask{
   height: 100%;
@@ -402,8 +404,10 @@ body{
 .choice{
   height: 115px;
   width: 100vw;
-  background: url(images/理由.png) no-repeat center;
+  background: url(images/理由.jpg) no-repeat center;
   font-weight: bold;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .choice_mask{
   height: 100%;
@@ -741,7 +745,7 @@ body{
   /* ---------------------------------- production ---------------------------------- */
   .production {
     height: 200px;
-    background-image: url(images/個人・小規模のための.png);
+    background-image: url(images/個人・小規模のための.jpg);
     background-size: cover;
   }
   .production span {
@@ -770,7 +774,7 @@ body{
   /* ---------------------------------- choice ---------------------------------- */
   .choice {
     height: 200px;
-    background-image: url(images/理由.png);
+    background-image: url(images/理由.jpg);
     background-size: cover;
   }
   .choice span {
