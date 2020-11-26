@@ -247,6 +247,13 @@ body{
   margin: 0 auto;
   font-weight: bold;
 }
+.line-green{
+  color: white;
+  background-color: #00B900;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
 /* ボタン */
 @keyframes anime{
   0%{transform:scale(.95); opacity:1}
@@ -266,8 +273,8 @@ body{
     top: 0;
     left: 0;
     border-radius: 32px;
-    background: #3a81b4;
-    border: 1px solid #3a81b4;
+    background: #34b434;
+    border: 1px solid #34b434;
     transform: translate3d(0,0,0);
   }
   .action_btn_1:before {
@@ -285,7 +292,7 @@ body{
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background: #0168B4;
+    background: #00B900;
   }
   .action_btn_2 {
     display: block;
@@ -702,6 +709,10 @@ body{
     height: 100px;
     width: 500px;
     margin: 30px auto 100px auto;
+  }
+  .line-green{
+    padding: 10px 20px;
+    margin-right: 10px;
   }
   /* ボタン */
   @keyframes anime{
