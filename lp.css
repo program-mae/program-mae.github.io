@@ -321,7 +321,7 @@ body{
   width: 100vw;
   background: url(images/個人・小規模のための.jpg) no-repeat center;
   font-weight: bold;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 .production_mask{
@@ -406,7 +406,7 @@ body{
   width: 100vw;
   background: url(images/理由.jpg) no-repeat center;
   font-weight: bold;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 .choice_mask{
@@ -745,8 +745,7 @@ body{
   /* ---------------------------------- production ---------------------------------- */
   .production {
     height: 200px;
-    background-image: url(images/個人・小規模のための.jpg);
-    background-size: cover;
+    background-attachment: fixed;
   }
   .production span {
     font-size: 35px;
@@ -774,8 +773,7 @@ body{
   /* ---------------------------------- choice ---------------------------------- */
   .choice {
     height: 200px;
-    background-image: url(images/理由.jpg);
-    background-size: cover;
+    background-attachment: fixed;
   }
   .choice span {
     font-size: 35px;
