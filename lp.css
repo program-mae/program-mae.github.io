@@ -232,21 +232,6 @@ body{
   background-color: #0168B4;
   transform: rotate(-70deg);
 }
-.action_btn a{
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  background-color: #0168B4;
-  height: 70px;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  font-weight: bold;
-}
 .line-green{
   color: white;
   background-color: #00B900;
@@ -257,7 +242,8 @@ body{
 /* ボタン */
 @keyframes anime{
   0%{transform:scale(.95); opacity:1}
-  90%{opacity:.1}to{transform:scale(1.2,1.5); opacity:0}
+  90%{opacity:.1}
+  to{transform:scale(1.2,1.5); opacity:0}
   }
   .action_btn_1 {
     position: relative;
@@ -278,10 +264,17 @@ body{
     transform: translate3d(0,0,0);
   }
   .action_btn_1:before {
-    animation: anime 2s ease-out infinite;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
   }
   .action_btn_1:after {
-   animation: anime 2s ease-out 1s infinite;
+   animation-name: anime;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
   }
   a {
     font-size: 20px;
@@ -293,19 +286,6 @@ body{
     text-align: center;
     text-decoration: none;
     background: #00B900;
-  }
-  .action_btn_2 {
-    display: block;
-    position: relative;
-  }
-  .action_btn_2:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    width: 8px;
-    height: 8px;  
-    margin: -4px 0 0 0;
   }
 
 /* ---------------------------------- before ---------------------------------- */
@@ -708,12 +688,6 @@ body{
   .action_message_1, .action_message_3{
     width: 65px;
   }
-  .action_btn a {
-    font-size: 30px;
-    height: 100px;
-    width: 500px;
-    margin: 30px auto 100px auto;
-  }
   .line-green{
     padding: 10px 20px;
     margin-right: 10px;
@@ -813,7 +787,7 @@ body{
     width: 70%;
   }
   .reason_icons {
-    font-size: 77px;
+    font-size: 70px;
   }
   .reason_icon {
     height: 130px;
@@ -821,7 +795,7 @@ body{
     border-radius: 65px;
   }
   .mini {
-    font-size: 37px;
+    font-size: 35px;
   }
   /* ---------------------------------- fee ---------------------------------- */
   .fee_title, .fee_50000 {
@@ -839,12 +813,9 @@ body{
   .fee {
     padding: 80px 40px;
   }
-  /* ---------------------------------- flow ---------------------------------- */
-  /* ---------------------------------- action ---------------------------------- */
 }
 /* ---------------------------------- 1110px ---------------------------------- */
 @media (min-width: 1110px) {
-  /* ---------------------------------- catch ---------------------------------- */
 /* ---------------------------------- campaign ---------------------------------- */
   .campaign_title_1, .campaign_title_3 {
     flex-direction: unset;
@@ -857,9 +828,6 @@ body{
   .campaign_text_1, .campaign_text_3 {
     font-size: 20px;
   }
-  /* ---------------------------------- action ---------------------------------- */
-  /* ---------------------------------- before ---------------------------------- */
-  /* ---------------------------------- production ---------------------------------- */
   /* ---------------------------------- appeal ---------------------------------- */
   .appeal_con_text {
     font-size: 20px;
@@ -890,15 +858,7 @@ body{
     width: 250px;
     margin: 0;
   }
-  /* ---------------------------------- after ---------------------------------- */
-  /* ---------------------------------- choice ---------------------------------- */
   /* ---------------------------------- reason ---------------------------------- */
-  .reason_icons {
-    font-size: 90px;
-  }
-  .mini {
-    font-size: 45px;
-  }
   .reason_text {
     font-size: 20px;
   }
@@ -932,7 +892,7 @@ body{
     margin-top: 50px;
   }
   .flow_icons {
-    font-size: 90px;
+    font-size: 70px;
   }
   .flow_icon {
     height: 150px;
@@ -947,5 +907,4 @@ body{
     border-radius: 25px;
     top: -25px;
   }
-  /* ---------------------------------- action ---------------------------------- */
 }
