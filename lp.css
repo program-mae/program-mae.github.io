@@ -294,12 +294,18 @@ body{
   margin-top: 40px;
   vertical-align: bottom; /* 画像の下の隙間削除 */
 }
+.sp{
+  display: block;
+}
+.pc{
+  display: none;
+}
 
 /* ---------------------------------- production ---------------------------------- */
 .production{
   height: 115px;
   width: 100vw;
-  background: url(images/個人・小規模のための.jpg) no-repeat center;
+  background: url(images/個人・小規模のための_640.jpg) no-repeat center;
   font-weight: bold;
   background-attachment: scroll;
   background-size: cover;
@@ -384,7 +390,7 @@ body{
 .choice{
   height: 115px;
   width: 100vw;
-  background: url(images/理由.jpg) no-repeat center;
+  background: url(images/理由_640.jpg) no-repeat center;
   font-weight: bold;
   background-attachment: scroll;
   background-size: cover;
@@ -716,10 +722,18 @@ body{
     margin-top: 0;
     max-width: 768px;
   }
+  .sp{
+    display: none;
+  }
+  .pc{
+    display: block;
+  }
   /* ---------------------------------- production ---------------------------------- */
   .production {
     height: 200px;
+    background: url(images/個人・小規模のための.jpg) no-repeat center;
     background-attachment: fixed;
+    background-size: cover;
   }
   .production span {
     font-size: 35px;
@@ -747,7 +761,9 @@ body{
   /* ---------------------------------- choice ---------------------------------- */
   .choice {
     height: 200px;
+    background: url(images/理由.jpg) no-repeat center;
     background-attachment: fixed;
+    background-size: cover;
   }
   .choice span {
     font-size: 35px;
